@@ -15,4 +15,5 @@ additional packages I tried and implement:
 - filament
 
 db schema:
+<img width="943" height="740" alt="db schema" src="https://github.com/user-attachments/assets/33ad8085-c546-4c77-983e-d979d57f8a5c" />
 
