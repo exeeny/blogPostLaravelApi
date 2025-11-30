@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::get('/{type}/{id}/comment', [CommentController::class, "index"]);
-Route::apiResource('/post', PostController::class);
+Route::apiResource('/post', PostController::class)->middleware(['throttle:post']);
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/user', function (Request $request) {
@@ -24,5 +24,4 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/{type}/{id}/comment', [CommentController::class, "store"]);
     Route::put('/comment/{comment}', [CommentController::class, "update"]);
     Route::delete('/comment/{comment}', [CommentController::class, "destroy"]);
-
 });

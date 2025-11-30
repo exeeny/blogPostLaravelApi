@@ -8,6 +8,7 @@ during building this mini project i've learnt and put into practice following la
 - sanctum authentication and authorization
 - separate form request validation 
 - admin panels with filament
+- laravel rate limiter
 
 
 additional packages I tried and implement:
