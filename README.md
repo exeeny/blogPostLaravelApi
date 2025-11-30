@@ -9,6 +9,8 @@ during building this mini project i've learnt and put into practice following la
 - separate form request validation 
 - admin panels with filament
 - laravel rate limiter
+- event/listener
+- mail sending
 
 
 additional packages I tried and implement:

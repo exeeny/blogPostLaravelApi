@@ -47,6 +47,8 @@ class User extends Authenticatable
         );
     }
 
+    
+
     public function posts(){
         return $this->hasMany(Post::class);
     }
@@ -99,4 +101,5 @@ class User extends Authenticatable
             'is_banned' => 'boolean',
         ];
     }
+
 }
